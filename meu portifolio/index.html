@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de André Marques — projetos e redes sociais.">
+    <title>Meu Portfólio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+    <header>
+        <!-- navegação futura -->
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="container">
+                <figure>
+                    <img src="eu1.jpg" class="perfil" alt="Foto de perfil de André Marques" width="300" height="300" loading="lazy">
+                </figure>
+
+                <h1>André Marques</h1>
+
+                <p class="descricao">
+                    Sou estudante e gosto de tecnologia.<br>
+                    Aqui você encontra meus projetos e redes sociais!
+                </p>
+
+                <div class="links">
+                    <a href="https://instagram.com/Piauiense_ofc" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects" class="projects">
+          <div class="container">
+            <h2>Projetos</h2>
+
+            <div class="projects-grid">
+              <article class="project-card" data-title="Projeto Exemplo 1" data-image="projects/proj1.jpg" data-desc="Uma pequena demonstração do projeto 1" data-gh="#" data-demo="#">
+                <figure>
+                  <img src="projects/proj1.jpg" alt="Screenshot do Projeto Exemplo 1" class="project-thumb" width="600" height="400" loading="lazy">
+                </figure>
+                <h3>Projeto Exemplo 1</h3>
+                <p>Pequena descrição do que esse projeto faz.</p>
+                <div class="project-actions">
+                  <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Código</a>
+                  <a class="btn outline" href="#" target="_blank" rel="noopener noreferrer">Demo</a>
+                  <button class="btn secondary open-details">Ver mais</button>
+                </div>
+              </article>
+
+              <!-- Copie/duplique o bloco acima para cada projeto, atualizando data-* e imagens -->
+
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- contatos e créditos -->
+    </footer>
+
+    <!-- Project details modal -->
+    <div id="project-modal" class="modal" aria-hidden="true" role="dialog" aria-label="Detalhes do projeto">
+      <div class="modal-content" role="document">
+        <button class="modal-close" aria-label="Fechar">×</button>
+        <figure><img id="modal-image" src="" alt="" loading="lazy"></figure>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <p class="modal-links">
+          <a id="modal-gh" class="btn" href="#" target="_blank" rel="noopener noreferrer">Código</a>
+          <a id="modal-demo" class="btn outline" href="#" target="_blank" rel="noopener noreferrer">Demo</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="scripts.js" defer></script>
+</body>
+</html>
